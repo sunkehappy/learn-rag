@@ -35,6 +35,7 @@ def load_markdown_file(path: Path) -> Document:
 
 def load_documents() -> list[Document]:
     markdown_files = list(DOCS_DIR.glob("**/*.md"))
+    markdown_files.sort()
     documents = []
     for file in markdown_files:
         documents.append(load_markdown_file(file))
