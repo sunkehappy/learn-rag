@@ -3,6 +3,7 @@ from typing import Any
 
 import chromadb
 from chromadb import PersistentClient
+from chromadb.api.types import QueryResult
 from openai import OpenAI
 
 from config import BASE_URL, CHROMA_DIR, QWEN_API_KEY, QWEN_EMBEDDING_MODEL, validate_config
@@ -72,11 +73,40 @@ def ingest_documents(reset: bool = False):
     index_chunks(chunks)
 
 
-def search_chunks(query: str, top_k: int = 3):
+def format_query_results(results: QueryResult) -> list[dict[str, Any]]:
+    matches: list[dict[str, Any]] = []
+    if not results.get("ids"):
+        return matches
+
+    ids = results["ids"][0]
+    documents = results.get("documents")
+    metadatas = results.get("metadatas")
+    distances = results.get("distances")
+
+    for index, chunk_id in enumerate(ids):
+        raw_metadata = metadatas[0][index] if metadatas and metadatas[0] else {}
+        text = documents[0][index] if documents and documents[0] else ""
+        distance = distances[0][index] if distances and distances[0] else None
+        matches.append(
+            {
+                "id": chunk_id,
+                "text": text or "",
+                "metadata": {
+                    "document": raw_metadata.get("relative_path", ""),
+                    "category": raw_metadata.get("category", ""),
+                    "title": raw_metadata.get("doc_title", raw_metadata.get("section", "")),
+                },
+                "distance": distance,
+            }
+        )
+    return matches
+
+
+def search_chunks(query: str, top_k: int = 3) -> list[dict[str, Any]]:
     collection = get_collection()
     query_embedding = embed_texts([query])[0]
     results = collection.query(query_embeddings=[query_embedding], n_results=top_k)
-    return results
+    return format_query_results(results)
 
 
 def main():
