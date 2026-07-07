@@ -10,17 +10,18 @@ DOCS_DIR = BASE_DIR / "docs"
 
 CHROMA_DIR = BASE_DIR / 'data' / "chroma"
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL")
-OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL")
+QWEN_API_KEY = os.getenv("QWEN_API_KEY")
+QWEN_MODEL = os.getenv("QWEN_MODEL")
+QWEN_EMBEDDING_MODEL = os.getenv("QWEN_EMBEDDING_MODEL")
+BASE_URL = os.getenv("BASE_URL")
 
 def validate_config():
-    if not OPENAI_API_KEY:
-        raise ValueError("OPENAI_API_KEY is not set")
-    if not OPENAI_MODEL:
-        raise ValueError("OPENAI_MODEL is not set")
-    if not OPENAI_EMBEDDING_MODEL:
-        raise ValueError("OPENAI_EMBEDDING_MODEL is not set")
+    if not QWEN_API_KEY:
+        raise ValueError("QWEN_API_KEY is not set")
+    if not QWEN_MODEL:
+        raise ValueError("QWEN_MODEL is not set")
+    if not QWEN_EMBEDDING_MODEL:
+        raise ValueError("QWEN_EMBEDDING_MODEL is not set")
     if not DOCS_DIR.exists():
         raise ValueError("DOCS_DIR does not exist")
     

@@ -11,7 +11,7 @@ class Chunk:
     doc_title: str
     section: str
     category: str
-    relative_path: Path
+    relative_path: str
 
 
 def split_markdown_by_h2(document: Document) -> list[Chunk]:
@@ -25,14 +25,15 @@ def split_markdown_by_h2(document: Document) -> list[Chunk]:
         if line.startswith("## "):
             if current_chunk:
                 chunks.append(current_chunk)
-            id = f"{document.relative_path.stem}::chunk-{len(chunks)}"
+            id = f"{document.relative_path}::chunk-{len(chunks)}"
             title = document.title
             section = line[2:].strip()
             category = document.category
             relative_path = document.relative_path
             current_chunk = Chunk(id=id, text=line, doc_title=title, section=section, category=category, relative_path=relative_path)
         else:
-            current_chunk.text += line
+            if current_chunk:
+                current_chunk.text += line
     if current_chunk:
         chunks.append(current_chunk)
     return chunks

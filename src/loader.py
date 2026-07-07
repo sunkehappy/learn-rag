@@ -6,17 +6,11 @@ from config import DOCS_DIR
 @dataclass
 class Document:
     path: Path
-    relative_path: Path
+    relative_path: str
     category: str
     title: str
     content: str
 
-def load_documents(dir: Path) -> list[Document]:
-    documents = []
-    for file in dir.glob("**/*.md"):
-        with open(file, "r") as f:
-            content = f.read()
-            documents.append(Document(path=file, content=content, metadata={}))
         
 def extract_title(markdown: str, fallback: str) -> str:
     for line in markdown.splitlines():
@@ -30,7 +24,7 @@ def load_markdown_file(path: Path) -> Document:
         relative_path = path.relative_to(DOCS_DIR)
         category = relative_path.parent.name
         title = extract_title(content, relative_path.stem)
-        return Document(path=path, relative_path=relative_path, category=category, title=title, content=content)
+        return Document(path=path, relative_path=str(relative_path), category=category, title=title, content=content)
 
 
 def load_documents() -> list[Document]:
