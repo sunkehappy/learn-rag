@@ -1,7 +1,10 @@
 from dataclasses import dataclass
+import logging
 from pathlib import Path
 
 from config import DOCS_DIR
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class Document:
@@ -33,6 +36,7 @@ def load_documents() -> list[Document]:
     documents = []
     for file in markdown_files:
         documents.append(load_markdown_file(file))
+    logger.info("documents loaded count=%d dir=%s", len(documents), DOCS_DIR)
     return documents
 
 

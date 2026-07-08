@@ -1,8 +1,11 @@
 from dataclasses import dataclass
+import logging
 from pathlib import Path
 
 from config import DOCS_DIR
 from loader import Document, load_documents
+
+logger = logging.getLogger(__name__)
 
 @dataclass
 class Chunk:
@@ -43,6 +46,11 @@ def split_documents(documents: list[Document]) -> list[Chunk]:
     chunks = []
     for document in documents:
         chunks.extend(split_markdown_by_h2(document))
+    logger.info(
+        "documents split document_count=%d chunk_count=%d",
+        len(documents),
+        len(chunks),
+    )
     return chunks
 
 

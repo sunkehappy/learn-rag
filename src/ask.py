@@ -1,5 +1,7 @@
+import logging
 import os
 import sys
+import time
 from typing import Any
 
 from dotenv import load_dotenv
@@ -9,6 +11,8 @@ from config import BASE_URL, QWEN_API_KEY, QWEN_MODEL, validate_config
 from vector_store import search_chunks
 
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 client = OpenAI(api_key=QWEN_API_KEY, base_url=BASE_URL)
 
@@ -51,9 +55,17 @@ def build_user_input(question: str, context: str):
 
 
 def generate_answer(question: str, top_k: int = 3):
+    logger.info("generate answer start question=%r top_k=%d", question, top_k)
+    start_time = time.perf_counter()
+
     matches = search_chunks(question, top_k)
+    if not matches:
+        logger.warning("generate answer no context question=%r", question)
+
     context = build_context(matches)
     user_input = build_user_input(question, context)
+
+    llm_start = time.perf_counter()
     response = client.chat.completions.create(
         model=str(QWEN_MODEL),
         messages=[
@@ -61,7 +73,18 @@ def generate_answer(question: str, top_k: int = 3):
             {"role": "user", "content": user_input}
         ]
     )
-    return response.choices[0].message.content, matches
+    llm_latency_ms = (time.perf_counter() - llm_start) * 1000
+    answer = response.choices[0].message.content
+    total_latency_ms = (time.perf_counter() - start_time) * 1000
+
+    logger.info(
+        "generate answer done match_count=%d answer_length=%d llm_latency_ms=%.1f total_latency_ms=%.1f",
+        len(matches),
+        len(answer or ""),
+        llm_latency_ms,
+        total_latency_ms,
+    )
+    return answer, matches
 
 
 def print_source(matches: list[dict[str, Any]]):
@@ -76,6 +99,7 @@ def print_source(matches: list[dict[str, Any]]):
 
 def ask_once(question: str):
     answer, matches = generate_answer(question)
+    logger.info("ask once complete question=%r", question)
     print(f"Answer: {answer}")
     print_source(matches)
     return answer
@@ -92,4 +116,7 @@ def interactive_mode():
 
 
 if __name__ == "__main__":
+    from logging_config import setup_logging
+
+    setup_logging()
     interactive_mode()
