@@ -19,6 +19,8 @@ class ChunkMetadata:
     section: str
     category: str
     relative_path: str
+    entity: str
+    country_code: str
 
     @classmethod
     def from_chunk(cls, chunk: Chunk) -> ChunkMetadata:
@@ -28,6 +30,8 @@ class ChunkMetadata:
             section=chunk.section,
             category=chunk.category,
             relative_path=chunk.relative_path,
+            entity=chunk.entity,
+            country_code=chunk.country_code,
         )
 
     def to_chroma_dict(self) -> dict[str, str]:
@@ -37,6 +41,8 @@ class ChunkMetadata:
             "section": self.section,
             "category": self.category,
             "relative_path": self.relative_path,
+            "entity": self.entity,
+            "country_code": self.country_code,
         }
 
 
@@ -46,6 +52,8 @@ class SearchMatchMetadata:
     category: str
     title: str
     section: str
+    entity: str
+    country_code: str
 
     @classmethod
     def from_chroma(cls, raw: Mapping[str, object]) -> SearchMatchMetadata:
@@ -56,6 +64,8 @@ class SearchMatchMetadata:
             category=_as_str(raw.get("category")),
             title=_as_str(doc_title or section),
             section=section,
+            entity=_as_str(raw.get("entity")),
+            country_code=_as_str(raw.get("country_code")),
         )
 
 

@@ -7,7 +7,7 @@ from chromadb import PersistentClient
 from chromadb.api.types import QueryResult
 from openai import OpenAI
 
-from config import BASE_URL, CHROMA_DIR, INGEST_RESET, QWEN_API_KEY, QWEN_EMBEDDING_MODEL, validate_config
+from config import BASE_URL, CHROMA_DIR, INGEST_RESET, QWEN_API_KEY, QWEN_EMBEDDING_MODEL, SYNC_METADATA_ONLY, validate_config
 from loader import load_documents
 from models import ChunkMetadata, SearchMatch
 from splitter import split_documents, Chunk, normalize_chunk_lengths
@@ -58,6 +58,50 @@ def get_indexed_chunk_ids(collection) -> set[str]:
     return set(ids)
 
 
+def sync_chunk_metadata(chunks: list[Chunk], batch_size: int = 100):
+    chunks = normalize_chunk_lengths(chunks)
+    collection = get_collection()
+    existing_ids = get_indexed_chunk_ids(collection)
+    to_update = [chunk for chunk in chunks if chunk.id in existing_ids]
+    skipped_count = len(chunks) - len(to_update)
+
+    if not to_update:
+        logger.info("metadata sync complete nothing_to_update total=%d", len(chunks))
+        return
+
+    total = len(to_update)
+    total_batches = (total + batch_size - 1) // batch_size
+    logger.info(
+        "metadata sync start update_count=%d skipped=%d total=%d batch_size=%d",
+        total,
+        skipped_count,
+        len(chunks),
+        batch_size,
+    )
+
+    for batch_index, i in enumerate(range(0, total, batch_size), start=1):
+        batch = to_update[i:i + batch_size]
+        ids = [chunk.id for chunk in batch]
+        metadata = [ChunkMetadata.from_chunk(chunk).to_chroma_dict() for chunk in batch]
+        collection.update(ids=ids, metadatas=list(metadata))
+
+        updated = min(i + batch_size, total)
+        logger.info(
+            "metadata sync progress batch=%d/%d updated=%d/%d",
+            batch_index,
+            total_batches,
+            updated,
+            total,
+        )
+
+    logger.info(
+        "metadata sync complete updated=%d skipped=%d total=%d",
+        len(to_update),
+        skipped_count,
+        len(chunks),
+    )
+
+
 def index_chunks(chunks: list[Chunk], batch_size: int = 10):
     chunks = normalize_chunk_lengths(chunks)
     collection = get_collection()
@@ -102,12 +146,14 @@ def index_chunks(chunks: list[Chunk], batch_size: int = 10):
   
 def ingest_documents(reset: bool = False):
     validate_config()
-    logger.info("ingest start reset=%s", reset)
+    logger.info("ingest start reset=%s sync_metadata_only=%s", reset, SYNC_METADATA_ONLY)
     if reset:
         reset_collection()
     documents = load_documents()
     chunks = split_documents(documents)
-    index_chunks(chunks)
+    sync_chunk_metadata(chunks)
+    if not SYNC_METADATA_ONLY:
+        index_chunks(chunks)
     logger.info("ingest complete document_count=%d chunk_count=%d", len(documents), len(chunks))
 
 
@@ -167,6 +213,9 @@ def main():
 
     setup_logging()
     ingest_documents(reset=INGEST_RESET)
+    if SYNC_METADATA_ONLY:
+        logger.info("sync metadata only mode enabled, skipping sample search")
+        return
     results = search_chunks("怎么请病假，扣钱吗？")
     logger.info("search sample result_count=%d", len(results))
 

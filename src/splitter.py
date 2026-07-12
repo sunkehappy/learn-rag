@@ -2,6 +2,7 @@ from dataclasses import dataclass, replace
 import logging
 
 from config import EMBEDDING_MAX_INPUT_CHARS
+from entity_resolver import resolve_from_path, resolve_from_section
 from loader import Document, load_documents
 
 logger = logging.getLogger(__name__)
@@ -15,6 +16,8 @@ class Chunk:
     section: str
     category: str
     relative_path: str
+    entity: str = ""
+    country_code: str = ""
 
 
 def split_text_by_length(text: str, max_length: int) -> list[str]:
@@ -75,6 +78,8 @@ def split_oversized_chunk(chunk: Chunk, max_length: int = EMBEDDING_MAX_INPUT_CH
             section=chunk.section,
             category=chunk.category,
             relative_path=chunk.relative_path,
+            entity=chunk.entity,
+            country_code=chunk.country_code,
         )
         for index, text in enumerate(text_parts)
     ]
@@ -111,6 +116,7 @@ def split_markdown_by_h2(document: Document) -> list[Chunk]:
     chunks = []
     current_chunk = None
     index= 0
+    base_info = resolve_from_path(document.relative_path)
     lines = document.content.splitlines()
     while index < len(lines) and not lines[index].startswith("## "):
         index += 1
@@ -123,7 +129,17 @@ def split_markdown_by_h2(document: Document) -> list[Chunk]:
             section = line[2:].strip()
             category = document.category
             relative_path = document.relative_path
-            current_chunk = Chunk(id=id, text=line, doc_title=title, section=section, category=category, relative_path=relative_path)
+            entity_info = resolve_from_section(base_info, section, relative_path)
+            current_chunk = Chunk(
+                id=id,
+                text=line,
+                doc_title=title,
+                section=section,
+                category=category,
+                relative_path=relative_path,
+                entity=entity_info.entity,
+                country_code=entity_info.country_code,
+            )
         else:
             if current_chunk:
                 current_chunk.text += line

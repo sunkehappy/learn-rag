@@ -1,11 +1,15 @@
 {
-  "include": ["src"],
+  "include": ["src", "tests"],
   "exclude": [".venv", "**/__pycache__", "data"],
   "venvPath": ".",
   "venv": ".venv",
   "executionEnvironments": [
     {
       "root": "src"
+    },
+    {
+      "root": "tests",
+      "extraPaths": ["src"]
     }
   ],
   "typeCheckingMode": "standard"
