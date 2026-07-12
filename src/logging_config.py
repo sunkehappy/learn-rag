@@ -24,3 +24,9 @@ def setup_logging(level: str | None = None) -> None:
 
     for logger_name in _NOISY_LOGGERS:
         logging.getLogger(logger_name).setLevel(logging.WARNING)
+
+
+def log_progress(message: str) -> None:
+    """Log to stderr and print to stdout so CLI users see progress immediately."""
+    logging.getLogger("smartkb").info(message)
+    print(f"→ {message}", flush=True)

@@ -21,6 +21,9 @@ QWEN_MODEL = os.getenv("QWEN_MODEL")
 QWEN_EMBEDDING_MODEL = os.getenv("QWEN_EMBEDDING_MODEL")
 BASE_URL = os.getenv("BASE_URL")
 
+REDIS_URL = os.getenv("REDIS_URL")
+SESSION_TTL_SECONDS = int(os.getenv("SESSION_TTL_SECONDS", "1800"))
+
 def validate_config():
     if not QWEN_API_KEY:
         raise ValueError("QWEN_API_KEY is not set")
@@ -28,6 +31,8 @@ def validate_config():
         raise ValueError("QWEN_MODEL is not set")
     if not QWEN_EMBEDDING_MODEL:
         raise ValueError("QWEN_EMBEDDING_MODEL is not set")
+    if not REDIS_URL:
+        raise ValueError("REDIS_URL is not set")
     if not DOCS_DIR.exists():
         raise ValueError("DOCS_DIR does not exist")
     

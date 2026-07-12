@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import time
@@ -182,20 +183,111 @@ def format_query_results(results: QueryResult) -> list[SearchMatch]:
     return matches
 
 
-def search_chunks(query: str, top_k: int = 3) -> list[SearchMatch]:
-    logger.info("search start query=%r top_k=%d", query, top_k)
+def _build_where_filter(
+    country_code: str | None = None,
+    entity: str | None = None,
+) -> dict[str, object] | None:
+    clauses: list[dict[str, object]] = []
+    if country_code is not None:
+        clauses.append({"country_code": country_code})
+    if entity is not None:
+        clauses.append({"entity": entity})
+    if not clauses:
+        return None
+    if len(clauses) == 1:
+        return clauses[0]
+    return {"$and": clauses}
+
+
+def _tiered_where_filters(
+    country_code: str | None = None,
+    entity: str | None = None,
+) -> list[tuple[str, dict[str, object] | None]]:
+    tiers: list[tuple[str, dict[str, object] | None]] = []
+    seen: set[str] = set()
+
+    def add_tier(label: str, where: dict[str, object] | None) -> None:
+        key = json.dumps(where, sort_keys=True) if where is not None else "__none__"
+        if key in seen:
+            return
+        seen.add(key)
+        tiers.append((label, where))
+
+    if country_code or entity:
+        add_tier("specific", _build_where_filter(country_code, entity))
+
+    if country_code:
+        add_tier("general", _build_where_filter("", entity))
+        if entity:
+            add_tier("general", {"country_code": ""})
+
+    if entity and not country_code:
+        add_tier("general", _build_where_filter(None, ""))
+
+    add_tier("broad", None)
+    return tiers
+
+
+def _query_collection(
+    collection,
+    query_embedding: list[float],
+    top_k: int,
+    where: dict[str, object] | None,
+) -> list[SearchMatch]:
+    kwargs: dict[str, object] = {
+        "query_embeddings": [query_embedding],
+        "n_results": top_k,
+    }
+    if where:
+        kwargs["where"] = where
+    results = collection.query(**kwargs)
+    return format_query_results(results)
+
+
+def search_chunks(
+    query: str,
+    top_k: int = 3,
+    *,
+    country_code: str | None = None,
+    entity: str | None = None,
+) -> list[SearchMatch]:
+    logger.info(
+        "search start query=%r top_k=%d country_code=%r entity=%r",
+        query,
+        top_k,
+        country_code,
+        entity,
+    )
     start_time = time.perf_counter()
     collection = get_collection()
     query_embedding = embed_texts([query])[0]
-    results = collection.query(query_embeddings=[query_embedding], n_results=top_k)
-    matches = format_query_results(results)
+
+    tiers = _tiered_where_filters(country_code, entity)
+    matches: list[SearchMatch] = []
+    matched_tier = "broad"
+
+    for tier_label, where in tiers:
+        matches = _query_collection(collection, query_embedding, top_k, where)
+        if matches:
+            matched_tier = tier_label
+            if tier_label != tiers[0][0]:
+                logger.warning(
+                    "search tier fallback tier=%s query=%r country_code=%r entity=%r",
+                    tier_label,
+                    query,
+                    country_code,
+                    entity,
+                )
+            break
+
     latency_ms = (time.perf_counter() - start_time) * 1000
 
     if matches:
         top_source = matches[0].metadata.document
         logger.info('-' * 80)
         logger.info(
-            "search done match_count=%d top_source=%s latency_ms=%.1f",
+            "search done tier=%s match_count=%d top_source=%s latency_ms=%.1f",
+            matched_tier,
             len(matches),
             top_source,
             latency_ms,
