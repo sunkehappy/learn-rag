@@ -2,7 +2,7 @@ from dataclasses import dataclass
 import logging
 from pathlib import Path
 
-from config import DOCS_DIR
+from config import DOCS_DIR, GITLAB_DOCS_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -31,12 +31,12 @@ def load_markdown_file(path: Path) -> Document:
 
 
 def load_documents() -> list[Document]:
-    markdown_files = list(DOCS_DIR.glob("**/*.md"))
+    markdown_files = list(GITLAB_DOCS_DIR.glob("**/*.md"))
     markdown_files.sort()
     documents = []
     for file in markdown_files:
         documents.append(load_markdown_file(file))
-    logger.info("documents loaded count=%d dir=%s", len(documents), DOCS_DIR)
+    logger.info("documents loaded count=%d dir=%s", len(documents), GITLAB_DOCS_DIR)
     return documents
 
 

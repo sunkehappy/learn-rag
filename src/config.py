@@ -7,8 +7,13 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DOCS_DIR = BASE_DIR / "docs"
+GITLAB_DOCS_DIR = DOCS_DIR / "gitlab_handbook"
 
 CHROMA_DIR = BASE_DIR / 'data' / "chroma"
+
+# Qwen text-embedding-v4 single-input limit is 33000 chars; keep a safety margin.
+EMBEDDING_MAX_INPUT_CHARS = int(os.getenv("EMBEDDING_MAX_INPUT_CHARS", "32000"))
+INGEST_RESET = os.getenv("INGEST_RESET", "false").lower() in ("1", "true", "yes")
 
 QWEN_API_KEY = os.getenv("QWEN_API_KEY")
 QWEN_MODEL = os.getenv("QWEN_MODEL")

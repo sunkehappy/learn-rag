@@ -2,12 +2,12 @@ import logging
 import os
 import sys
 import time
-from typing import Any
 
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from config import BASE_URL, QWEN_API_KEY, QWEN_MODEL, validate_config
+from config import BASE_URL, QWEN_API_KEY, QWEN_MODEL
+from models import SearchMatch
 from vector_store import search_chunks
 
 load_dotenv()
@@ -30,17 +30,17 @@ Rules:
 """
 
 
-def build_context(matches: list[dict[str, Any]]):
+def build_context(matches: list[SearchMatch]):
     context_parts: list[str] = []
     for index, match in enumerate(matches, start=1):
-        metadata = match['metadata']
+        metadata = match.metadata
         context_parts.append(
           f"""
 [Source {index}]
-[Document: {metadata['document']}]
-[Category: {metadata['category']}]
-[Title: {metadata['title']}]
-[Content: {match['text']}]
+[Document: {metadata.document}]
+[Category: {metadata.category}]
+[Title: {metadata.title}]
+[Content: {match.text}]
           """
         )
     return "\n".join(context_parts)
@@ -59,9 +59,6 @@ def generate_answer(question: str, top_k: int = 3):
     start_time = time.perf_counter()
 
     matches = search_chunks(question, top_k)
-    if not matches:
-        logger.warning("generate answer no context question=%r", question)
-
     context = build_context(matches)
     user_input = build_user_input(question, context)
 
@@ -87,13 +84,13 @@ def generate_answer(question: str, top_k: int = 3):
     return answer, matches
 
 
-def print_source(matches: list[dict[str, Any]]):
+def print_source(matches: list[SearchMatch]):
     for match in matches:
-        metadata = match['metadata']
-        print(f"Source: {metadata['document']}")
-        print(f"Category: {metadata['category']}")
-        print(f"Title: {metadata['title']}")
-        print(f"Content: {match['text']}")
+        metadata = match.metadata
+        print(f"Source: {metadata.document}")
+        print(f"Category: {metadata.category}")
+        print(f"Title: {metadata.title}")
+        print(f"Content: {match.text}")
         print("-" * 100)
 
 

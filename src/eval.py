@@ -1,9 +1,10 @@
 import json
 import logging
 import time
+from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Self
 
 from ask import generate_answer
 from config import BASE_DIR
@@ -19,6 +20,24 @@ class EvalCase:
     expected_source: str
     expected_section: str
     expected_keywords: list[str]
+
+    @classmethod
+    def from_dict(cls, data: Mapping[str, object]) -> Self:
+        required_fields = ("question", "expected_source", "expected_section", "expected_keywords")
+        missing = [field for field in required_fields if field not in data]
+        if missing:
+            raise ValueError(f"Eval case missing required fields: {', '.join(missing)}")
+
+        expected_keywords = data["expected_keywords"]
+        if not isinstance(expected_keywords, list):
+            raise ValueError("Eval case field 'expected_keywords' must be a list")
+
+        return cls(
+            question=str(data["question"]),
+            expected_source=str(data["expected_source"]),
+            expected_section=str(data["expected_section"]),
+            expected_keywords=[str(keyword) for keyword in expected_keywords],
+        )
 
 
 @dataclass
@@ -38,15 +57,7 @@ class EvalResult:
 
 def load_eval_cases() -> list[EvalCase]:
     data = json.loads(EVAL_FILE.read_text(encoding="utf-8"))
-    cases = [
-        EvalCase(
-            question=case["question"], 
-            expected_source=case["expected_source"], 
-            expected_section=case["expected_section"], 
-            expected_keywords=case["expected_keywords"]
-        ) 
-        for case in data
-    ]
+    cases = [EvalCase.from_dict(case) for case in data]
     logger.info("eval cases loaded count=%d file=%s", len(cases), EVAL_FILE)
     return cases
 
@@ -59,12 +70,9 @@ def evaluate_case(case: EvalCase) -> EvalResult:
     start_time = time.perf_counter()
     answer, matches = generate_answer(case.question)
     latency_ms = (time.perf_counter() - start_time) * 1000
-    top_metadata: dict[str, Any] | None = None
-
-    if matches:
-        top_metadata = matches[0]["metadata"]
-    top_source = top_metadata["document"] if top_metadata else None
-    top_section = top_metadata["section"] if top_metadata else None
+    top_match = matches[0] if matches else None
+    top_source = top_match.metadata.document if top_match else None
+    top_section = top_match.metadata.section if top_match else None
 
     source_hit = top_source == case.expected_source
     section_hit = top_section == case.expected_section
