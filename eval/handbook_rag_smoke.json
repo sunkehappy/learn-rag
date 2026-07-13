@@ -1,0 +1,151 @@
+[
+  {
+    "id": "smoke-001",
+    "topic": "time_off",
+    "question": "病假最多有多少天？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "25"
+    ]
+  },
+  {
+    "id": "smoke-002",
+    "topic": "time_off",
+    "question": "Flexible PTO 是什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Flexible Paid Time Off (PTO)",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "PTO",
+      "Flexible"
+    ]
+  },
+  {
+    "id": "smoke-003",
+    "topic": "values",
+    "question": "GitLab CREDIT 价值观是什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "CREDIT",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "CREDIT"
+    ]
+  },
+  {
+    "id": "smoke-004",
+    "topic": "benefits",
+    "question": "Modern Health 是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/modern-health.md",
+    "expected_section": "Mental Wellness Support",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "Modern Health"
+    ]
+  },
+  {
+    "id": "smoke-005",
+    "topic": "leave",
+    "question": "GitLab 育儿假政策？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "GitLab Parental Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "Parental"
+    ]
+  },
+  {
+    "id": "smoke-006",
+    "topic": "compensation",
+    "question": "ESPP 是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/stock-options.md",
+    "expected_section": "Employee Stock Purchase Plan (\"ESPP\")",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "ESPP"
+    ]
+  },
+  {
+    "id": "smoke-007",
+    "topic": "culture",
+    "question": "异步工作怎么开始？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/asynchronous.md",
+    "expected_section": "How to get started with async",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "async"
+    ]
+  },
+  {
+    "id": "smoke-008",
+    "topic": "hiring",
+    "question": "面试有哪些阶段？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Interview Stages",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "面试"
+    ]
+  },
+  {
+    "id": "smoke-009",
+    "topic": "communication",
+    "question": "默认公开是什么原则？",
+    "expected_source": "gitlab_handbook/communication/confidentiality-levels.md",
+    "expected_section": "Public by default",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "公开"
+    ]
+  },
+  {
+    "id": "smoke-010",
+    "topic": "finance",
+    "question": "在家办公设备报销清单？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "Approved WFH Equipment List",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "WFH"
+    ]
+  },
+  {
+    "id": "smoke-011",
+    "topic": "security",
+    "question": "密码标准是什么？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/password-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "password",
+      "Password",
+      "密码"
+    ]
+  },
+  {
+    "id": "smoke-012",
+    "topic": "engineering",
+    "question": "代码评审怎么做？",
+    "expected_source": "gitlab_handbook/engineering/workflow/code-review.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "expected_keywords": [
+      "review",
+      "Review",
+      "评审"
+    ]
+  }
+]

@@ -80,6 +80,9 @@ If the user asked about a country with no dedicated handbook section (e.g. China
 ## Tests
 
 ```bash
-pip install redis fakeredis
-pytest tests/test_intent_rules.py tests/test_session_store.py tests/test_query_analyzer.py tests/test_search_filter.py
+pytest                          # unit only (default)
+pytest -m retrieval             # handbook retrieval bank
+pytest -m llm                   # RAG smoke
 ```
+
+See also [`docs/eval-handbook.md`](eval-handbook.md).

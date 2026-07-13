@@ -1,0 +1,2042 @@
+[
+  {
+    "id": "arch-001",
+    "topic": "architecture",
+    "question": "工程架构总览在哪？",
+    "search_query": "Complexity at Scale architecture engineering handbook",
+    "expected_source": "gitlab_handbook/engineering/architecture/_index.md",
+    "expected_section": "Complexity at Scale",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "arch-002",
+    "topic": "architecture",
+    "question": "架构 roadmap 在哪？",
+    "search_query": "architecture roadmap Multi-Large Sites Cloud Native",
+    "expected_source": "gitlab_handbook/engineering/architecture/roadmap.md",
+    "expected_section": "Multi-Large Sites: Cloud Native",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "arch-003",
+    "topic": "architecture",
+    "question": "架构 abstractions 与 Architecture Board？",
+    "search_query": "architecture key abstractions Architecture Board governance",
+    "expected_source": "gitlab_handbook/engineering/architecture/abstractions/_index.md",
+    "expected_section": "Architecture Board",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "arch-004",
+    "topic": "architecture",
+    "question": "架构 abstractions 是什么？",
+    "search_query": "architecture abstractions",
+    "expected_source": "gitlab_handbook/engineering/architecture/abstractions/_index.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "be-001",
+    "topic": "benefits",
+    "question": "比利时医疗福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
+    "expected_section": "Healthcare Benefits",
+    "expected_country_code": "BE",
+    "expected_entity": "GitLab BV",
+    "search_query": "Healthcare Benefits bv benefits belgium"
+  },
+  {
+    "id": "be-002",
+    "topic": "benefits",
+    "question": "比利时休假福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
+    "expected_section": "Time Off & Leave Benefits",
+    "expected_country_code": "BE",
+    "expected_entity": "GitLab BV",
+    "search_query": "Time Off & Leave Benefits bv benefits belgium"
+  },
+  {
+    "id": "ben-001",
+    "topic": "benefits",
+    "question": "公司级福利对所有人开放吗？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+    "expected_section": "Company Wide Benefits - Available to All Team Members",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Company Wide Benefits - Available to All Team Members"
+  },
+  {
+    "id": "ben-002",
+    "topic": "benefits",
+    "question": "实体特定福利在哪里看？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+    "expected_section": "How Our Benefits Work",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Entity-Specific Benefits general and entity benefits"
+  },
+  {
+    "id": "ben-003",
+    "topic": "benefits",
+    "question": "承包商有什么福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+    "expected_section": "How Our Benefits Work",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Contractor Benefits handbook"
+  },
+  {
+    "id": "ben-004",
+    "topic": "benefits",
+    "question": "GitLab Cares 救灾项目是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+    "expected_section": "GitLab Cares - Team Member Disaster Relief Program",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab Cares - Team Member Disaster Relief Program"
+  },
+  {
+    "id": "ben-005",
+    "topic": "benefits",
+    "question": "福利总体如何运作？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+    "expected_section": "How Our Benefits Work",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How Our Benefits Work"
+  },
+  {
+    "id": "ben-006",
+    "topic": "benefits",
+    "question": "荷兰福利健康与福祉？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md",
+    "expected_section": "Health & Wellbeing",
+    "expected_country_code": "NL",
+    "expected_entity": "GitLab BV",
+    "search_query": "Health & Wellbeing bv benefits netherlands"
+  },
+  {
+    "id": "ben-007",
+    "topic": "benefits",
+    "question": "爱尔兰福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
+    "expected_section": "Health & Wellbeing",
+    "expected_country_code": "IE",
+    "expected_entity": "GitLab Ireland LTD",
+    "search_query": "Health & Wellbeing gitlab ireland ltd"
+  },
+  {
+    "id": "ben-008",
+    "topic": "benefits",
+    "question": "法国福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md",
+    "expected_section": "Health & Wellbeing",
+    "expected_country_code": "FR",
+    "expected_entity": "GitLab France S.A.S.",
+    "search_query": "Health & Wellbeing france sas"
+  },
+  {
+    "id": "ben-009",
+    "topic": "benefits",
+    "question": "澳大利亚福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
+    "expected_section": "**Health & Wellbeing**",
+    "expected_country_code": "AU",
+    "expected_entity": "GitLab PTY",
+    "search_query": "Health & Wellbeing pty benefits australia"
+  },
+  {
+    "id": "ben-010",
+    "topic": "benefits",
+    "question": "新加坡福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
+    "expected_section": "Health & Wellbeing",
+    "expected_country_code": "SG",
+    "expected_entity": "GitLab Singapore Pte Ltd",
+    "search_query": "Health & Wellbeing singapore pte ltd"
+  },
+  {
+    "id": "ca-001",
+    "topic": "benefits",
+    "question": "加拿大育儿假？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
+    "expected_section": "Parental Leave",
+    "expected_country_code": "CA",
+    "expected_entity": "GitLab Canada Corp.",
+    "search_query": "Parental Leave canada corp benefits"
+  },
+  {
+    "id": "ca-002",
+    "topic": "benefits",
+    "question": "加拿大健康福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
+    "expected_section": "Health & Wellbeing Coverage",
+    "expected_country_code": "CA",
+    "expected_entity": "GitLab Canada Corp.",
+    "search_query": "Health & Wellbeing Coverage canada corp benefits"
+  },
+  {
+    "id": "finw-001",
+    "topic": "benefits",
+    "question": "财务健康辅导 Modern Health Financial？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md",
+    "expected_section": "Modern Health Financial Coaching",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Modern Health Financial Coaching financial wellness"
+  },
+  {
+    "id": "mh-001",
+    "topic": "benefits",
+    "question": "Modern Health 心理健康支持是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/modern-health.md",
+    "expected_section": "Mental Wellness Support",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Modern Health mental wellness support"
+  },
+  {
+    "id": "mh-002",
+    "topic": "benefits",
+    "question": "Modern Health 谁有资格？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/modern-health.md",
+    "expected_section": "Eligibility",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Modern Health eligibility"
+  },
+  {
+    "id": "mh-003",
+    "topic": "benefits",
+    "question": "Modern Health 怎么开始使用？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/modern-health.md",
+    "expected_section": "How to Get Started",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Modern Health how to get started"
+  },
+  {
+    "id": "mh-004",
+    "topic": "benefits",
+    "question": "Modern Health 危机支持？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/modern-health.md",
+    "expected_section": "Crisis Support",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Modern Health crisis support"
+  },
+  {
+    "id": "uk-001",
+    "topic": "benefits",
+    "question": "英国健康福利在哪？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
+    "expected_section": "Health & Wellbeing",
+    "expected_country_code": "GB",
+    "expected_entity": "GitLab LTD",
+    "search_query": "Health & Wellbeing ltd benefits uk"
+  },
+  {
+    "id": "uk-002",
+    "topic": "benefits",
+    "question": "英国财务保障福利？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
+    "expected_section": "Financial Security",
+    "expected_country_code": "GB",
+    "expected_entity": "GitLab LTD",
+    "search_query": "Financial Security ltd benefits uk"
+  },
+  {
+    "id": "us-001",
+    "topic": "benefits",
+    "question": "美国医疗保险覆盖在哪看？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+    "expected_section": "We've Got You Covered",
+    "expected_country_code": "US",
+    "expected_entity": "GitLab Inc.",
+    "search_query": "Medical Coverage US benefits"
+  },
+  {
+    "id": "us-002",
+    "topic": "benefits",
+    "question": "美国福利如何入职开通？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+    "expected_section": "Getting Started with Your Benefits",
+    "expected_country_code": "US",
+    "expected_entity": "GitLab Inc.",
+    "search_query": "Getting Started with Your Benefits"
+  },
+  {
+    "id": "us-003",
+    "topic": "benefits",
+    "question": "美国 2026 福利计划年信息？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+    "expected_section": "2026 Plan Year Information",
+    "expected_country_code": "US",
+    "expected_entity": "GitLab Inc.",
+    "search_query": "2026 Plan Year Information"
+  },
+  {
+    "id": "us-004",
+    "topic": "benefits",
+    "question": "美国财务保障类福利有哪些？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+    "expected_section": "Financial Security: Security You Can Count On",
+    "expected_country_code": "US",
+    "expected_entity": "GitLab Inc.",
+    "search_query": "Financial Security You Can Count On"
+  },
+  {
+    "id": "chat-001",
+    "topic": "communication",
+    "question": "Slack 频道怎么用？",
+    "expected_source": "gitlab_handbook/communication/chat.md",
+    "expected_section": "Introduction",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Slack Key channels Search GitLab Channel browser"
+  },
+  {
+    "id": "chat-002",
+    "topic": "communication",
+    "question": "Slack 搜索怎么用？",
+    "expected_source": "gitlab_handbook/communication/chat.md",
+    "expected_section": "Channels",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Slack channels Search GitLab toolbar Channel browser"
+  },
+  {
+    "id": "chat-003",
+    "topic": "communication",
+    "question": "Slack 介绍？",
+    "expected_source": "gitlab_handbook/communication/chat.md",
+    "expected_section": "Search",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Slack Search GitLab communication chat asynchronous"
+  },
+  {
+    "id": "com-001",
+    "topic": "communication",
+    "question": "有效负责任沟通准则？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Effective & Responsible Communication Guidelines",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Effective & Responsible Communication Guidelines"
+  },
+  {
+    "id": "com-002",
+    "topic": "communication",
+    "question": "敏感话题怎么沟通？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Communicating Potentially GitLab Sensitive Topics",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Communicating Potentially GitLab Sensitive Topics"
+  },
+  {
+    "id": "com-003",
+    "topic": "communication",
+    "question": "该用哪个沟通渠道？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Determining Which Communication Forum To Use",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Determining Which Communication Forum To Use"
+  },
+  {
+    "id": "com-004",
+    "topic": "communication",
+    "question": "内部沟通指引？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Effective & Responsible Communication Guidelines",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Internal communication handbook guidelines"
+  },
+  {
+    "id": "com-005",
+    "topic": "communication",
+    "question": "会议相关指引？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Effective & Responsible Communication Guidelines",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Effective Responsible Communication Guidelines all-remote"
+  },
+  {
+    "id": "com-006",
+    "topic": "communication",
+    "question": "写作风格指南？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Communicating Potentially GitLab Sensitive Topics",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Communicating Potentially GitLab Sensitive Topics"
+  },
+  {
+    "id": "com-007",
+    "topic": "communication",
+    "question": "演示 Presentations 指引？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Determining Which Communication Forum To Use",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Determining Which Communication Forum To Use"
+  },
+  {
+    "id": "com-008",
+    "topic": "communication",
+    "question": "邮件沟通指引？",
+    "expected_source": "gitlab_handbook/communication/_index.md",
+    "expected_section": "Email",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "low internal email culture reply to all Slack communication guidelines"
+  },
+  {
+    "id": "conf-001",
+    "topic": "communication",
+    "question": "默认公开 Public by default？",
+    "expected_source": "gitlab_handbook/communication/confidentiality-levels.md",
+    "expected_section": "Public by default",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "confidentiality levels public by default transparency"
+  },
+  {
+    "id": "conf-002",
+    "topic": "communication",
+    "question": "哪些信息不公开？",
+    "expected_source": "gitlab_handbook/communication/confidentiality-levels.md",
+    "expected_section": "Not public",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "confidentiality levels not public internal limited access"
+  },
+  {
+    "id": "comp-001",
+    "topic": "compensation",
+    "question": "GitLab 薪酬理念是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/compensation/_index.md",
+    "expected_section": "Contact Total Rewards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Compensation Our Philosophy total rewards"
+  },
+  {
+    "id": "comp-002",
+    "topic": "compensation",
+    "question": "薪酬由哪些要素组成？",
+    "expected_source": "gitlab_handbook/total-rewards/compensation/_index.md",
+    "expected_section": "Contact Total Rewards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Compensation Elements handbook"
+  },
+  {
+    "id": "comp-003",
+    "topic": "compensation",
+    "question": "什么时候定薪酬？",
+    "expected_source": "gitlab_handbook/total-rewards/compensation/_index.md",
+    "expected_section": "When Compensation is Determined",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "When Compensation is Determined"
+  },
+  {
+    "id": "comp-004",
+    "topic": "compensation",
+    "question": "Job Architecture 是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/compensation/_index.md",
+    "expected_section": "Contact Total Rewards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Job Architecture compensation handbook"
+  },
+  {
+    "id": "inc-001",
+    "topic": "compensation",
+    "question": "推荐奖金 Referral Bonuses 如何？",
+    "expected_source": "gitlab_handbook/total-rewards/incentives.md",
+    "expected_section": "Referral Bonuses",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Referral Bonuses incentives"
+  },
+  {
+    "id": "inc-002",
+    "topic": "compensation",
+    "question": "酌情奖金 Discretionary Bonuses？",
+    "expected_source": "gitlab_handbook/total-rewards/incentives.md",
+    "expected_section": "Discretionary Bonuses",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Discretionary Bonuses incentives"
+  },
+  {
+    "id": "inc-003",
+    "topic": "compensation",
+    "question": "Acting/Interim 角色怎么补偿？",
+    "expected_source": "gitlab_handbook/total-rewards/incentives.md",
+    "expected_section": "Compensation for Acting and Interim Roles",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Compensation for Acting and Interim Roles incentives"
+  },
+  {
+    "id": "stock-001",
+    "topic": "compensation",
+    "question": "股票期权 Stock Options 是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/stock-options.md",
+    "expected_section": "Stock Options",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Stock Options stock options"
+  },
+  {
+    "id": "stock-002",
+    "topic": "compensation",
+    "question": "ESPP 员工购股计划是什么？",
+    "expected_source": "gitlab_handbook/total-rewards/stock-options.md",
+    "expected_section": "Employee Stock Purchase Plan (\"ESPP\")",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Employee Stock Purchase Plan ESPP stock options"
+  },
+  {
+    "id": "stock-003",
+    "topic": "compensation",
+    "question": "年度 refresh grant 谁有资格？",
+    "expected_source": "gitlab_handbook/total-rewards/stock-options.md",
+    "expected_section": "Annual Refresh Grant Program Eligibility",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Annual Refresh Grant Program Eligibility stock options"
+  },
+  {
+    "id": "stock-004",
+    "topic": "compensation",
+    "question": "晋升时股权怎么处理？",
+    "expected_source": "gitlab_handbook/total-rewards/stock-options.md",
+    "expected_section": "Promotions",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Promotions stock options"
+  },
+  {
+    "id": "cult-001",
+    "topic": "culture",
+    "question": "异步工作 async 怎么开始？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/asynchronous.md",
+    "expected_section": "How to get started with async",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How to get started with async asynchronous"
+  },
+  {
+    "id": "cult-002",
+    "topic": "culture",
+    "question": "异步工作有哪六大好处？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/asynchronous.md",
+    "expected_section": "Six benefits of asynchronous working",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Six benefits of asynchronous working asynchronous"
+  },
+  {
+    "id": "cult-003",
+    "topic": "culture",
+    "question": "异步沟通指南在哪里？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/asynchronous.md",
+    "expected_section": "Guide to asynchronous communication",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Guide to asynchronous communication asynchronous"
+  },
+  {
+    "id": "cult-004",
+    "topic": "culture",
+    "question": "远程管理是什么？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/being-a-great-remote-manager.md",
+    "expected_section": "What is remote management?",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "What is remote management being a great remote manager"
+  },
+  {
+    "id": "cult-005",
+    "topic": "culture",
+    "question": "优秀远程经理的特质？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/being-a-great-remote-manager.md",
+    "expected_section": "Traits of a great remote manager",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Traits of a great remote manager being a great remote manager"
+  },
+  {
+    "id": "cult-006",
+    "topic": "culture",
+    "question": "如何激励远程员工？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/being-a-great-remote-manager.md",
+    "expected_section": "How do you motivate remote workers?",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How do you motivate remote workers being a great remote manager"
+  },
+  {
+    "id": "cult-007",
+    "topic": "culture",
+    "question": "如何管理远程员工？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/being-a-great-remote-manager.md",
+    "expected_section": "How do you manage remote workers?",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How do you manage remote workers being a great remote manager"
+  },
+  {
+    "id": "cult-008",
+    "topic": "culture",
+    "question": "行为准则 Expected behavior？",
+    "expected_source": "gitlab_handbook/company/culture/ecoc.md",
+    "expected_section": "Expected behavior",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Events Code of Conduct expected behavior harassment-free"
+  },
+  {
+    "id": "cult-009",
+    "topic": "culture",
+    "question": "不可接受的行为有哪些？",
+    "expected_source": "gitlab_handbook/company/culture/ecoc.md",
+    "expected_section": "Unacceptable behavior",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Events Code of Conduct unacceptable behavior"
+  },
+  {
+    "id": "cult-010",
+    "topic": "culture",
+    "question": "目睹不当行为该怎么办？",
+    "expected_source": "gitlab_handbook/company/culture/ecoc.md",
+    "expected_section": "What to do if you witness or are subjected to unacceptable behavior",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Events Code of Conduct witness subjected unacceptable behavior"
+  },
+  {
+    "id": "cult-011",
+    "topic": "culture",
+    "question": "Culture at GitLab 由什么组成？",
+    "expected_source": "gitlab_handbook/company/culture/_index.md",
+    "expected_section": "Culture at GitLab",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Culture at GitLab is composed of three things"
+  },
+  {
+    "id": "cult-012",
+    "topic": "culture",
+    "question": "Life at GitLab 是什么？",
+    "expected_source": "gitlab_handbook/company/culture/_index.md",
+    "expected_section": "Life at GitLab",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Life at GitLab mission enable everyone to contribute"
+  },
+  {
+    "id": "cult-013",
+    "topic": "culture",
+    "question": "远程经理要优先做入职 onboarding？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/being-a-great-remote-manager.md",
+    "expected_section": "Prioritize onboarding",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Prioritize onboarding being a great remote manager"
+  },
+  {
+    "id": "cult-014",
+    "topic": "culture",
+    "question": "异步工作指南总览？",
+    "expected_source": "gitlab_handbook/company/culture/all-remote/asynchronous.md",
+    "expected_section": "How to get started with async",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How to get started with async asynchronous"
+  },
+  {
+    "id": "cult-015",
+    "topic": "culture",
+    "question": "不当行为的后果？",
+    "expected_source": "gitlab_handbook/company/culture/ecoc.md",
+    "expected_section": "Consequences of unacceptable behavior",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Events Code of Conduct consequences of unacceptable behavior"
+  },
+  {
+    "id": "cs-001",
+    "topic": "customer_success",
+    "question": "Customer Success 总览在哪？",
+    "search_query": "What is a Customer Success Manager CSM at GitLab",
+    "expected_source": "gitlab_handbook/customer-success/csm/_index.md",
+    "expected_section": "What is a Customer Success Manager (CSM) at GitLab?",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "cs-002",
+    "topic": "customer_success",
+    "question": "CSM 团队手册在哪？",
+    "search_query": "customer success manager CSM handbook",
+    "expected_source": "gitlab_handbook/customer-success/csm/_index.md",
+    "expected_section": "Customer Success Segments",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "cs-003",
+    "topic": "customer_success",
+    "question": "CSM QBR 怎么做？",
+    "search_query": "Preparing a CSM QBR Presenting quarterly business review",
+    "expected_source": "gitlab_handbook/customer-success/csm/csm-manager/qbr.md",
+    "expected_section": "Preparing a CSM QBR",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "cs-004",
+    "topic": "customer_success",
+    "question": "CS playbooks 在哪里？",
+    "search_query": "customer success playbooks",
+    "expected_source": "gitlab_handbook/customer-success/playbooks/_index.md",
+    "expected_section": "Structure of Playbooks",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "cs-005",
+    "topic": "customer_success",
+    "question": "CS workshops 相关说明？",
+    "search_query": "customer success CI workshop",
+    "expected_source": "gitlab_handbook/customer-success/workshops/ci-workshop.md",
+    "expected_section": "CI Workshop",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "cs-006",
+    "topic": "customer_success",
+    "question": "Demo systems 使用条款？",
+    "search_query": "demo systems terms of service",
+    "expected_source": "gitlab_handbook/solutions-architects/center-of-excellence/demo-systems-tos.md",
+    "expected_section": "Demo Systems",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "eng-001",
+    "topic": "engineering",
+    "question": "代码评审 Code Review 怎么做？",
+    "expected_source": "gitlab_handbook/engineering/workflow/code-review.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Code Review Guidelines mandatory merge request reviewer values SLO"
+  },
+  {
+    "id": "eng-002",
+    "topic": "engineering",
+    "question": "工程迭代 Iteration 工作流？",
+    "expected_source": "gitlab_handbook/engineering/workflow/iteration.md",
+    "expected_section": "How to keep a merge request small",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "keep merge request small horizontal vertical slicing iterative incremental"
+  },
+  {
+    "id": "eng-003",
+    "topic": "engineering",
+    "question": "根因分析 Root Cause Analysis？",
+    "expected_source": "gitlab_handbook/engineering/workflow/root-cause-analysis.md",
+    "expected_section": "What is a Root Cause Analysis?",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "What is a Root Cause Analysis root cause analysis"
+  },
+  {
+    "id": "eng-004",
+    "topic": "engineering",
+    "question": "工程 Demo 怎么做？",
+    "expected_source": "gitlab_handbook/engineering/workflow/demos.md",
+    "expected_section": "Demo script",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "engineering workflow Demo script demos"
+  },
+  {
+    "id": "eng-005",
+    "topic": "engineering",
+    "question": "GitLab 仓库相关工作流？",
+    "expected_source": "gitlab_handbook/engineering/workflow/gitlab-repositories.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "gitlab repositories Purpose engineering workflow"
+  },
+  {
+    "id": "eng-006",
+    "topic": "engineering",
+    "question": "Duo-First Development 标准做法是什么？",
+    "expected_source": "gitlab_handbook/engineering/workflow/duo-first-development.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Duo-First Development Standard Development Practices MR Generation"
+  },
+  {
+    "id": "eng-007",
+    "topic": "engineering",
+    "question": "自动化 Automation 工作流？",
+    "expected_source": "gitlab_handbook/engineering/workflow/automation.md",
+    "expected_section": "Guidelines for automation and access tokens",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Guidelines for automation and access tokens project deploy token"
+  },
+  {
+    "id": "eng-008",
+    "topic": "engineering",
+    "question": "跨职能优先级？",
+    "expected_source": "gitlab_handbook/company/working-groups/cross-functional-prioritization.md",
+    "expected_section": "Cross-functional prioritization process",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "cross-functional prioritization working group process"
+  },
+  {
+    "id": "eng-009",
+    "topic": "engineering",
+    "question": "评审者价值观 Reviewer values？",
+    "expected_source": "gitlab_handbook/engineering/workflow/reviewer-values.md",
+    "expected_section": "Reviewer values",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Reviewer values reviewer values"
+  },
+  {
+    "id": "eng-010",
+    "topic": "engineering",
+    "question": "发布功能如何确定？",
+    "expected_source": "gitlab_handbook/engineering/workflow/release-feature-determination-workflow.md",
+    "expected_section": "Release/Feature Determination Workflow",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Release/Feature Determination Workflow release feature determination workflow"
+  },
+  {
+    "id": "eng-011",
+    "topic": "engineering",
+    "question": "Duo-first 开发？",
+    "expected_source": "gitlab_handbook/engineering/workflow/duo-first-development.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Overview duo first development"
+  },
+  {
+    "id": "eng-012",
+    "topic": "engineering",
+    "question": "工程创新 Engineering innovation？",
+    "expected_source": "gitlab_handbook/engineering/workflow/engineering-innovation.md",
+    "expected_section": "Alignment with GitLab's Strategy",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Alignment with GitLab s Strategy engineering innovation"
+  },
+  {
+    "id": "eng-013",
+    "topic": "engineering",
+    "question": "Fast Boot 是什么？",
+    "expected_source": "gitlab_handbook/engineering/workflow/fast-boot.md",
+    "expected_section": "History of the Fast Boot",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "History of the Fast Boot fast boot"
+  },
+  {
+    "id": "eng-inc-001",
+    "topic": "engineering",
+    "question": "工程事故管理 Incident Management Lifecycle？",
+    "search_query": "Incident Management Lifecycle Engineer On Call EOC reporting an incident",
+    "expected_source": "gitlab_handbook/engineering/infrastructure-platforms/incident-management/_index.md",
+    "expected_section": "Incident Management Lifecycle",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "eng-inc-002",
+    "topic": "engineering",
+    "question": "Incident manager onboarding 怎么做？",
+    "search_query": "Incident Manager On Call IMOC onboarding shifts",
+    "expected_source": "gitlab_handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding.md",
+    "expected_section": "Onboard as an Incident Manager",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "eng-inc-003",
+    "topic": "engineering",
+    "question": "On-call Tier 2 SME 是什么？",
+    "search_query": "Tier 2 SME Subject Matter Experts On-Call escalate MTTR",
+    "expected_source": "gitlab_handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md",
+    "expected_section": "Subject Matter Experts On-Call (Tier 2 SME)",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "eng-inc-004",
+    "topic": "engineering",
+    "question": "工程事故复盘 Incident Review？",
+    "search_query": "incident review infrastructure",
+    "expected_source": "gitlab_handbook/engineering/infrastructure-platforms/incident-review.md",
+    "expected_section": "Introduction",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "fin-001",
+    "topic": "finance",
+    "question": "费用报销政策是什么？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "1. POLICY",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "1 POLICY expenses"
+  },
+  {
+    "id": "fin-002",
+    "topic": "finance",
+    "question": "报销一般准则？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "3. General Guidelines",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "3 General Guidelines expenses"
+  },
+  {
+    "id": "fin-003",
+    "topic": "finance",
+    "question": "批准的在家办公设备清单？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "Approved WFH Equipment List",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Approved WFH Equipment List expenses"
+  },
+  {
+    "id": "fin-004",
+    "topic": "finance",
+    "question": "批准的办公用品清单？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "Approved Office Supplies List",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Approved Office Supplies List expenses"
+  },
+  {
+    "id": "fin-005",
+    "topic": "finance",
+    "question": "公司信用卡政策？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/corp-credit-cards.md",
+    "expected_section": "1. POLICY",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "1 POLICY corp credit cards"
+  },
+  {
+    "id": "fin-006",
+    "topic": "finance",
+    "question": "公司卡允许的消费？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/corp-credit-cards.md",
+    "expected_section": "3. Permissible Items",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "3 Permissible Items corp credit cards"
+  },
+  {
+    "id": "fin-007",
+    "topic": "finance",
+    "question": "公司卡不允许的消费？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/corp-credit-cards.md",
+    "expected_section": "4. Non- Permissible Items",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "4 Non- Permissible Items corp credit cards"
+  },
+  {
+    "id": "fin-008",
+    "topic": "finance",
+    "question": "账户应付简介？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/_index.md",
+    "expected_section": "Accounts Payable Processing",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Accounts Payable Processing Coupa Virtual Card"
+  },
+  {
+    "id": "fin-009",
+    "topic": "finance",
+    "question": "全球差旅与费用？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/_index.md",
+    "expected_section": "Introduction",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "i Global Travel and Expense"
+  },
+  {
+    "id": "fin-010",
+    "topic": "finance",
+    "question": "交易窗口 Trading Window？",
+    "expected_source": "gitlab_handbook/finance/investor-relations.md",
+    "expected_section": "Trading Window",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Trading Window investor relations"
+  },
+  {
+    "id": "fin-011",
+    "topic": "finance",
+    "question": "季度财报流程？",
+    "expected_source": "gitlab_handbook/finance/investor-relations.md",
+    "expected_section": "Quarterly Earnings Process",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Quarterly Earnings Process investor relations"
+  },
+  {
+    "id": "fin-012",
+    "topic": "finance",
+    "question": "投资者会议？",
+    "expected_source": "gitlab_handbook/finance/investor-relations.md",
+    "expected_section": "Investor Meetings",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Investor Meetings investor relations"
+  },
+  {
+    "id": "fin-013",
+    "topic": "finance",
+    "question": "报销流程 PROCEDURES？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "4. PROCEDURES",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Global Travel and Expense Policy PROCEDURES TRAVEL RELATED EXPENSES"
+  },
+  {
+    "id": "fin-014",
+    "topic": "finance",
+    "question": "实体卡 Physical Cards？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "5. Physical Cards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "5 Physical Cards expenses"
+  },
+  {
+    "id": "fin-015",
+    "topic": "finance",
+    "question": "采购卡 Purchase Cards？",
+    "expected_source": "gitlab_handbook/finance/expenses.md",
+    "expected_section": "6. Purchase Cards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Navan Purchase Card expenses stipend home office"
+  },
+  {
+    "id": "fin-016",
+    "topic": "finance",
+    "question": "违规交易 Out of Policy？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/corp-credit-cards.md",
+    "expected_section": "5. Out of Policy Transactions",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "5 Out of Policy Transactions corp credit cards"
+  },
+  {
+    "id": "fin-017",
+    "topic": "finance",
+    "question": "经理对公司卡的期望？",
+    "expected_source": "gitlab_handbook/finance/accounts-payable/corp-credit-cards.md",
+    "expected_section": "6. Manager Expectations",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "6 Manager Expectations corp credit cards"
+  },
+  {
+    "id": "hire-001",
+    "topic": "hiring",
+    "question": "面试有哪些阶段？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Interview Stages",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "candidate FAQ Interview Stages hiring process"
+  },
+  {
+    "id": "hire-002",
+    "topic": "hiring",
+    "question": "申请流程是怎样的？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Interview Stages",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "candidate FAQ Application Process how to submit"
+  },
+  {
+    "id": "hire-003",
+    "topic": "hiring",
+    "question": "筛选电话 Screening Call？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Interview Stages",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "candidate FAQ Screening Call expectations"
+  },
+  {
+    "id": "hire-004",
+    "topic": "hiring",
+    "question": "团队面试 Team Interviews？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Team Interviews",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "candidate FAQ Team Interviews stage after Screening Call"
+  },
+  {
+    "id": "hire-005",
+    "topic": "hiring",
+    "question": "背景调查和 offer？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Offer & Background Screening",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Offer & Background Screening"
+  },
+  {
+    "id": "hire-006",
+    "topic": "hiring",
+    "question": "GitLab 在哪里招人？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "Where does GitLab hire people?",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Where does GitLab hire people"
+  },
+  {
+    "id": "hire-007",
+    "topic": "hiring",
+    "question": "面试官培训要求？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Interviewer Training Requirements",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Interviewer Training Requirements conducting a gitlab interview"
+  },
+  {
+    "id": "hire-008",
+    "topic": "hiring",
+    "question": "面试理念是什么？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Interviewing Philosophy",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Interviewing Philosophy conducting a gitlab interview"
+  },
+  {
+    "id": "hire-009",
+    "topic": "hiring",
+    "question": "面试前要做什么？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Before the Interview",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Before the Interview conducting a gitlab interview"
+  },
+  {
+    "id": "hire-010",
+    "topic": "hiring",
+    "question": "包容性面试 Inclusive Interviewing？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Inclusive Interviewing",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Inclusive Interviewing conducting a gitlab interview"
+  },
+  {
+    "id": "hire-011",
+    "topic": "hiring",
+    "question": "如何拒绝面试安排？",
+    "expected_source": "gitlab_handbook/hiring/interviewing/_index.md",
+    "expected_section": "How to decline interviews",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "How to decline interviews"
+  },
+  {
+    "id": "hire-012",
+    "topic": "hiring",
+    "question": "Greenhouse 相关说明？",
+    "expected_source": "gitlab_handbook/hiring/interviewing/_index.md",
+    "expected_section": "Greenhouse",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Greenhouse Applicant Tracking System Okta interviewer scorecard"
+  },
+  {
+    "id": "hire-013",
+    "topic": "hiring",
+    "question": "候选人评价与记分卡？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Candidate Evaluation and Scorecards",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Candidate Evaluation and Scorecards conducting a gitlab interview"
+  },
+  {
+    "id": "hire-014",
+    "topic": "hiring",
+    "question": "面试中的能力模型 Competencies？",
+    "expected_source": "gitlab_handbook/hiring/conducting-a-gitlab-interview.md",
+    "expected_section": "Competencies",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Competencies conducting a gitlab interview"
+  },
+  {
+    "id": "hire-015",
+    "topic": "hiring",
+    "question": "推荐人 References？",
+    "expected_source": "gitlab_handbook/hiring/candidate-faq/_index.md",
+    "expected_section": "References",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "candidate FAQ References how references are conducted"
+  },
+  {
+    "id": "leave-001",
+    "topic": "leave",
+    "question": "GitLab 育儿假政策在哪？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "GitLab Parental Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "parental leave policy eligibility"
+  },
+  {
+    "id": "leave-002",
+    "topic": "leave",
+    "question": "紧急假 Emergency Leave 是什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "Emergency Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "emergency leave policy"
+  },
+  {
+    "id": "leave-003",
+    "topic": "leave",
+    "question": "军假 Military Leave 如何规定？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "Military Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "military leave policy"
+  },
+  {
+    "id": "leave-004",
+    "topic": "leave",
+    "question": "长病假 Sick Leave 和病假时间有何关系？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "Sick Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick leave of absence six consecutive days"
+  },
+  {
+    "id": "leave-005",
+    "topic": "leave",
+    "question": "请假期间股权怎么归属？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "Equity Vesting During Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "equity vesting during leave"
+  },
+  {
+    "id": "leave-006",
+    "topic": "leave",
+    "question": "Caregiving Sick Leave 长假怎么处理？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/leave-types.md",
+    "expected_section": "Caregiving Sick Leave",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "caregiving sick leave of absence"
+  },
+  {
+    "id": "loa-001",
+    "topic": "leave",
+    "question": "美国如何申请 leave of absence？",
+    "expected_source": "gitlab_handbook/people-policies/leave-of-absence/us.md",
+    "expected_section": "How to Request Leave (Effective 2026-02-02)",
+    "expected_country_code": "US",
+    "expected_entity": null,
+    "search_query": "How to Request Leave Effective 2026-02-02 us"
+  },
+  {
+    "id": "loa-002",
+    "topic": "leave",
+    "question": "美国军假怎么请？",
+    "expected_source": "gitlab_handbook/people-policies/leave-of-absence/us.md",
+    "expected_section": "U.S Military Leave",
+    "expected_country_code": "US",
+    "expected_entity": null,
+    "search_query": "U S Military Leave us"
+  },
+  {
+    "id": "par-001",
+    "topic": "leave",
+    "question": "育儿假员工工具包有什么？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/parental-leave-toolkit.md",
+    "expected_section": "Team Member Toolkit",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Team Member Toolkit parental leave toolkit"
+  },
+  {
+    "id": "par-002",
+    "topic": "leave",
+    "question": "经理如何为育儿假做资源分配？",
+    "expected_source": "gitlab_handbook/total-rewards/benefits/parental-leave-toolkit.md",
+    "expected_section": "General Guidelines For Managers on Resource Allocation",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "General Guidelines For Managers on Resource Allocation parental leave toolkit"
+  },
+  {
+    "id": "pg-001",
+    "topic": "people_group",
+    "question": "晋升和转岗 promotions transfers 政策？",
+    "search_query": "promotions transfers people group",
+    "expected_source": "gitlab_handbook/people-group/promotions-transfers.md",
+    "expected_section": "Definitions",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-002",
+    "topic": "people_group",
+    "question": "签证 visas 政策在哪？",
+    "search_query": "visas immigration people group",
+    "expected_source": "gitlab_handbook/people-group/visas.md",
+    "expected_section": "Visa and Sponsorship Policy",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-003",
+    "topic": "people_group",
+    "question": "360 feedback 怎么做？",
+    "search_query": "360 feedback people group",
+    "expected_source": "gitlab_handbook/people-group/360-feedback.md",
+    "expected_section": "360 Feedback",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-004",
+    "topic": "people_group",
+    "question": "反骚扰 anti-harassment 政策？",
+    "search_query": "anti harassment policy",
+    "expected_source": "gitlab_handbook/people-group/anti-harassment.md",
+    "expected_section": "Introduction",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-005",
+    "topic": "people_group",
+    "question": "Learning and Development 总览？",
+    "search_query": "learning and development L&D overview",
+    "expected_source": "gitlab_handbook/people-group/learning-and-development/_index.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-006",
+    "topic": "people_group",
+    "question": "人才评估 talent assessment？",
+    "search_query": "talent assessment people group",
+    "expected_source": "gitlab_handbook/people-group/talent-assessment.md",
+    "expected_section": "Quick Start: What You Need to Know Now",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-007",
+    "topic": "people_group",
+    "question": "搬迁 relocation 政策？",
+    "search_query": "relocation policy people",
+    "expected_source": "gitlab_handbook/people-group/relocation.md",
+    "expected_section": "Relocation / Address Change",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pg-008",
+    "topic": "people_group",
+    "question": "代词 pronouns 指引？",
+    "search_query": "pronouns people group",
+    "expected_source": "gitlab_handbook/people-group/pronouns.md",
+    "expected_section": "A global perspective",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "pp-001",
+    "topic": "people_policies",
+    "question": "全球无障碍与合理便利政策？",
+    "expected_source": "gitlab_handbook/people-policies/_index.md",
+    "expected_section": "Global Accessibility and Accommodations Policy",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Global Accessibility and Accommodations Policy"
+  },
+  {
+    "id": "pp-002",
+    "topic": "people_policies",
+    "question": "职场行为 Workplace Conduct？",
+    "expected_source": "gitlab_handbook/people-policies/_index.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "People Policies Workplace Conduct"
+  },
+  {
+    "id": "pp-003",
+    "topic": "people_policies",
+    "question": "成员安全 Team Member Safety？",
+    "expected_source": "gitlab_handbook/people-policies/_index.md",
+    "expected_section": "Team Member Safety",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Team Member Safety"
+  },
+  {
+    "id": "pp-004",
+    "topic": "people_policies",
+    "question": "people policies 适用范围？",
+    "expected_source": "gitlab_handbook/people-policies/_index.md",
+    "expected_section": "Scope",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "People Policies Scope apply to all GitLab team members contractors"
+  },
+  {
+    "id": "prod-001",
+    "topic": "product",
+    "question": "产品手册总览在哪？",
+    "search_query": "product handbook overview product management",
+    "expected_source": "gitlab_handbook/product/_index.md",
+    "expected_section": "Welcome to the Product Team Handbook",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "prod-002",
+    "topic": "product",
+    "question": "UX 团队手册在哪？",
+    "search_query": "Role of Product Designers UX product design",
+    "expected_source": "gitlab_handbook/product/ux/product-design/_index.md",
+    "expected_section": "Role of Product Designers",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "prod-003",
+    "topic": "product",
+    "question": "产品 AI 相关页面？",
+    "search_query": "product AI features handbook",
+    "expected_source": "gitlab_handbook/product/ai/_index.md",
+    "expected_section": "Getting started on an AI feature",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "prod-004",
+    "topic": "product",
+    "question": "产品 personas 是什么？",
+    "search_query": "product personas roles vs personas",
+    "expected_source": "gitlab_handbook/product/personas/_index.md",
+    "expected_section": "Roles vs personas",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "prod-005",
+    "topic": "product",
+    "question": "产品 categories 怎么划分？",
+    "search_query": "product categories stages groups",
+    "expected_source": "gitlab_handbook/product/categories/_index.md",
+    "expected_section": "Interfaces",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "prod-006",
+    "topic": "product",
+    "question": "产品 UX heuristics 怎么用？",
+    "search_query": "UX Heuristics Templates scoring AI Heuristics",
+    "expected_source": "gitlab_handbook/product/ux/heuristics.md",
+    "expected_section": "Heuristics",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-001",
+    "topic": "sales",
+    "question": "销售 onboarding 流程在哪里看？",
+    "search_query": "GitLab Academy blended learning customer-ready 30 days",
+    "expected_source": "gitlab_handbook/sales/onboarding/_index.md",
+    "expected_section": "About GitLab Academy",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-002",
+    "topic": "sales",
+    "question": "销售 Enterprise Seller playbook？",
+    "search_query": "Enterprise Seller playbook prospecting pipeline",
+    "expected_source": "gitlab_handbook/sales/playbook/_index.md",
+    "expected_section": "The Enterprise Seller playbook",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-003",
+    "topic": "sales",
+    "question": "High velocity sales 团队手册？",
+    "search_query": "high velocity sales FO team",
+    "expected_source": "gitlab_handbook/sales/high-velocity-sales-fo-team/_index.md",
+    "expected_section": "High Velocity Sales",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-004",
+    "topic": "sales",
+    "question": "销售 territory 怎么划分？",
+    "search_query": "sales territory planning",
+    "expected_source": "gitlab_handbook/sales/territory-planning.md",
+    "expected_section": "Territory Planning",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-005",
+    "topic": "sales",
+    "question": "Account planning 怎么做？",
+    "search_query": "account planning sales",
+    "expected_source": "gitlab_handbook/sales/account-planning/_index.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sales-006",
+    "topic": "sales",
+    "question": "Field operations 负责什么？",
+    "search_query": "field operations sales strategy",
+    "expected_source": "gitlab_handbook/sales/field-operations/sales-strategy/_index.md",
+    "expected_section": "Sales Strategy",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sec-001",
+    "topic": "security",
+    "question": "密码标准 Password standard？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/password-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Purpose password standard"
+  },
+  {
+    "id": "sec-002",
+    "topic": "security",
+    "question": "数据分类标准？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/data-classification-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Purpose data classification standard"
+  },
+  {
+    "id": "sec-003",
+    "topic": "security",
+    "question": "Token 管理标准？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/token-management-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Token Management Standard approved GitLab token usage FedRAMP NIST"
+  },
+  {
+    "id": "sec-004",
+    "topic": "security",
+    "question": "安全日志标准？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/security-logging-standard.md",
+    "expected_section": "Purpose and Scope",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "security logging standard SIEM Devo retention requirements"
+  },
+  {
+    "id": "sec-005",
+    "topic": "security",
+    "question": "软件开发生命周期安全标准？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/software-development-lifecycle-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Purpose software development lifecycle standard"
+  },
+  {
+    "id": "sec-006",
+    "topic": "security",
+    "question": "加密 Cryptographic standard？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/cryptographic-standard.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Purpose cryptographic standard"
+  },
+  {
+    "id": "sec-007",
+    "topic": "security",
+    "question": "记录保留与删除？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/records-retention-deletion.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Purpose records retention deletion"
+  },
+  {
+    "id": "sec-008",
+    "topic": "security",
+    "question": "公司资产物理安全标准？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/physical-security-standard-for-company-assets.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "physical security standard for company assets"
+  },
+  {
+    "id": "sec-009",
+    "topic": "security",
+    "question": "GitLab 项目基线要求？",
+    "expected_source": "gitlab_handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md",
+    "expected_section": "Purpose",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "gitlab projects baseline requirements security standard"
+  },
+  {
+    "id": "sup-001",
+    "topic": "support",
+    "question": "Support 处理 issue 的工作流？",
+    "search_query": "support team Working with Issues prioritization escalate labels",
+    "expected_source": "gitlab_handbook/support/workflows/working-with-issues.md",
+    "expected_section": "Issue Prioritization",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sup-002",
+    "topic": "support",
+    "question": "Support 如何处理 PII 删除请求？",
+    "search_query": "Personal Data Removal Requests PII sensitive non-sensitive Support",
+    "expected_source": "gitlab_handbook/support/workflows/pii_removal_requests.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sup-003",
+    "topic": "support",
+    "question": "Support 社区支持 community support？",
+    "search_query": "Community Forum Workflows technical support Docs-first",
+    "expected_source": "gitlab_handbook/support/workflows/community-support.md",
+    "expected_section": "Technical Support in the Community Forum",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sup-004",
+    "topic": "support",
+    "question": "Support 与 Security 如何协作？",
+    "search_query": "Working with Security support triage security@gitlab.com macro",
+    "expected_source": "gitlab_handbook/support/workflows/working_with_security.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sup-005",
+    "topic": "support",
+    "question": "Support 数据如何处理 data handling？",
+    "search_query": "Handling data as a Support Engineer sensitive data best practices workflow",
+    "expected_source": "gitlab_handbook/support/workflows/data_handling.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "sup-006",
+    "topic": "support",
+    "question": "Support 如何 merge 或 split subscription？",
+    "search_query": "merge or split subscription license renewals support",
+    "expected_source": "gitlab_handbook/support/license-and-renewals/workflows/merge_or_split_subscription.md",
+    "expected_section": "Overview",
+    "expected_country_code": null,
+    "expected_entity": null
+  },
+  {
+    "id": "phil-001",
+    "topic": "time_off",
+    "question": "GitLab 对休假的哲学是什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+    "expected_section": "GitLab's Philosophy to Time Away from Work",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab s Philosophy to Time Away from Work time away philosophy sick time PTO public holiday bereavement caregiver time off"
+  },
+  {
+    "id": "phil-002",
+    "topic": "time_off",
+    "question": "计划休假前要如何沟通？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+    "expected_section": "Communicating (& Preparing for) Planned Time Away",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Communicating & Preparing for Planned Time Away time away philosophy sick time PTO public holiday bereavement caregiver time off"
+  },
+  {
+    "id": "phil-003",
+    "topic": "time_off",
+    "question": "突发请假怎么沟通？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+    "expected_section": "Communicating Unplanned Time Away",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Communicating Unplanned Time Away time away philosophy sick time PTO public holiday bereavement caregiver time off"
+  },
+  {
+    "id": "phil-004",
+    "topic": "time_off",
+    "question": "缺勤的单一事实来源是什么系统？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+    "expected_section": "Workday: Single Source of Truth for Absence",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Workday Single Source of Truth for Absence time away philosophy sick time PTO public holiday bereavement caregiver time off"
+  },
+  {
+    "id": "pto-001",
+    "topic": "time_off",
+    "question": "病假最多有多少天？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time policy 25 paid sick days rolling 12 months"
+  },
+  {
+    "id": "pto-002",
+    "topic": "time_off",
+    "question": "病假是按滚动 12 个月计算吗？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time rolling 12-month period eligibility"
+  },
+  {
+    "id": "pto-003",
+    "topic": "time_off",
+    "question": "请病假需要在 Workday 选什么标签？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time Workday Out Sick reporting"
+  },
+  {
+    "id": "pto-004",
+    "topic": "time_off",
+    "question": "连续病假超过 6 天算什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick absences exceed 6 consecutive days leave of absence"
+  },
+  {
+    "id": "pto-005",
+    "topic": "time_off",
+    "question": "美国请多天病假要提交到 Tilt 吗？",
+    "expected_source": "gitlab_handbook/people-policies/leave-of-absence/us.md",
+    "expected_section": "How to Request Leave (Effective 2026-02-02)",
+    "expected_country_code": "US",
+    "expected_entity": null,
+    "search_query": "Tilt medical related absence more than 5 days leave"
+  },
+  {
+    "id": "pto-006",
+    "topic": "time_off",
+    "question": "照顾家人的病假政策叫什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Caregiver Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "caregiver sick time family care leave 25 days"
+  },
+  {
+    "id": "pto-007",
+    "topic": "time_off",
+    "question": "护理假最多多少天？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Caregiver Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "caregiver sick time family care leave 25 days"
+  },
+  {
+    "id": "pto-008",
+    "topic": "time_off",
+    "question": "Flexible PTO 是什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Flexible Paid Time Off (PTO)",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "flexible paid time off PTO policy"
+  },
+  {
+    "id": "pto-009",
+    "topic": "time_off",
+    "question": "公共假日余额用完了还能怎么请假？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Public Holiday",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "public holiday balance accrual Workday"
+  },
+  {
+    "id": "pto-010",
+    "topic": "time_off",
+    "question": "丧假政策在哪里？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Bereavement",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "bereavement leave policy"
+  },
+  {
+    "id": "pto-011",
+    "topic": "time_off",
+    "question": "志愿假 Volunteer 是什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Volunteer",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "volunteer time off policy"
+  },
+  {
+    "id": "pto-012",
+    "topic": "time_off",
+    "question": "陪审义务相关政策叫什么？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "GitLab Legal Civic Obligations Policy",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "jury duty legal civic obligations"
+  },
+  {
+    "id": "pto-013",
+    "topic": "time_off",
+    "question": "中国病假怎么请？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": "CN",
+    "expected_entity": null,
+    "search_query": "sick time policy reporting Workday statutory"
+  },
+  {
+    "id": "pto-014",
+    "topic": "time_off",
+    "question": "病假期间工资怎么发？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time policy 25 paid sick days rolling 12 months Workday Out Sick"
+  },
+  {
+    "id": "pto-015",
+    "topic": "time_off",
+    "question": "短期病假 1-5 天要不要病假条？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time policy 25 paid sick days rolling 12 months Workday Out Sick"
+  },
+  {
+    "id": "pto-016",
+    "topic": "time_off",
+    "question": "病假是否与法定病假并行？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time policy 25 paid sick days rolling 12 months Workday Out Sick"
+  },
+  {
+    "id": "pto-017",
+    "topic": "time_off",
+    "question": "病假信息要对经理保密吗？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Sick Time",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "sick time policy 25 paid sick days rolling 12 months Workday Out Sick"
+  },
+  {
+    "id": "pto-018",
+    "topic": "time_off",
+    "question": "公共假日当年用不完会怎样？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Public Holiday",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "public holiday balance accrual Workday"
+  },
+  {
+    "id": "pto-019",
+    "topic": "time_off",
+    "question": "能不能用 PTO 替代病假？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Flexible Paid Time Off (PTO)",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "flexible paid time off PTO policy"
+  },
+  {
+    "id": "pto-020",
+    "topic": "time_off",
+    "question": "丧假可以请多久相关规定？",
+    "expected_source": "gitlab_handbook/people-group/time-off-and-absence/time-off-types.md",
+    "expected_section": "Bereavement",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "bereavement leave policy"
+  },
+  {
+    "id": "val-001",
+    "topic": "values",
+    "question": "GitLab CREDIT 价值观是什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "CREDIT",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "CREDIT values Collaboration Results Efficiency"
+  },
+  {
+    "id": "val-002",
+    "topic": "values",
+    "question": "Collaboration 价值观强调什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Collaboration",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab CREDIT values Collaboration six core values"
+  },
+  {
+    "id": "val-003",
+    "topic": "values",
+    "question": "Results for Customers 是什么意思？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Results for Customers",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab CREDIT values Results for Customers six core values"
+  },
+  {
+    "id": "val-004",
+    "topic": "values",
+    "question": "Efficiency 价值观是什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Efficiency",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab CREDIT values Efficiency six core values"
+  },
+  {
+    "id": "val-005",
+    "topic": "values",
+    "question": "Diversity Inclusion Belonging 价值观？",
+    "expected_source": "gitlab_handbook/company/culture/inclusion/_index.md",
+    "expected_section": "Diversity, Inclusion & Belonging at GitLab",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Diversity Inclusion Belonging at GitLab mission vision"
+  },
+  {
+    "id": "val-006",
+    "topic": "values",
+    "question": "Iteration 价值观是什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Iteration",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab CREDIT values Iteration six core values"
+  },
+  {
+    "id": "val-007",
+    "topic": "values",
+    "question": "Transparency 价值观是什么？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Transparency",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "GitLab CREDIT values Transparency six core values"
+  },
+  {
+    "id": "val-008",
+    "topic": "values",
+    "question": "为什么要有价值观？",
+    "expected_source": "gitlab_handbook/values/_index.md",
+    "expected_section": "Why have values",
+    "expected_country_code": null,
+    "expected_entity": null,
+    "search_query": "Why have values"
+  }
+]
